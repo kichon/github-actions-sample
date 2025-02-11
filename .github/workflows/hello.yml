@@ -8,10 +8,20 @@ on:
     branches:
       - main
 
-# hello worldを出力するジョブ
 jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
       - name: Hello world
         run: echo "Hello world"
+  multi-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "挨拶"
+        run: echo "Nice to meet you!!"
+
+      - name: "名前を言う"
+        run: echo "My name is Taro!!"
+
+      - name: "趣味を話す"
+        run: echo "I love programming!!"
