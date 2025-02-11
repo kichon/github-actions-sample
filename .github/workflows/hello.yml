@@ -1,0 +1,17 @@
+name: Github Actions Sample
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+# hello worldを出力するジョブ
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello world
+        run: echo "Hello world"
