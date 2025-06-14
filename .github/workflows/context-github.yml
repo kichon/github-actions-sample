@@ -1,0 +1,29 @@
+name: Context - GitHub
+
+on: push
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print GitHub context
+        run: |
+          echo "GitHub context:"
+          echo "  - Repository: ${{ github.repository }}"
+          echo "  - Ref: ${{ github.ref }}"
+          echo "  - SHA: ${{ github.sha }}"
+          echo "  - repository-owner: ${{ github.repository_owner }}"
+          echo "  - repository-owner-id: ${{ github.repository_owner_id }}"
+          echo "  - repository-owner-name: ${{ github.repository_owner_name }}"
+          echo "  - repository-owner-email: ${{ github.repository_owner_email }}"
+          echo "  - repository-owner-avatar-url: ${{ github.repository_owner_avatar_url }}"
+          echo "  - run-id: ${{ github.run_id }}"
+          echo "  - run-number: ${{ github.run_number }}"
+          echo "  - run-attempt: ${{ github.run_attempt }}"
+          echo "  - run-name: ${{ github.run_name }}"
+          echo "  - run-id: ${{ github.run_id }}"
+          echo "  - run-number: ${{ github.run_number }}"
+          echo "  - run-attempt: ${{ github.run_attempt }}"
+          echo "  - Event name: ${{ github.event_name }}"
+          echo "  - Event path: ${{ github.event_path }}"
+          echo "  - Event payload: ${{ github.event.payload }}"
+          echo "  - Event payload: ${{ github.event.payload }}"
